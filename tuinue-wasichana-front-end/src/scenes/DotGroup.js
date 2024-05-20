@@ -9,22 +9,22 @@ const DotGroup = ({ selectedPage, setSelecPage }) => {
         <AnchorLink className={ `${selectedPage === "home" ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
         href="#home"
-        onClick={() => setSelectedPage('home')}
+        onClick={() => selectedPage('home')}
         />
         <AnchorLink className={ `${selectedPage === "about" ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
         href="#about"
-        onClick={() => setSelectedPage('about')}
+        onClick={() => selectedPage('about')}
         />
         <AnchorLink className={ `${selectedPage === "ways to fundraise" ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
         href="#ways to fundraise"
-        onClick={() => setSelectedPage('ways to fundraise')}
+        onClick={() => selectedPage('ways to fundraise')}
         />
         <AnchorLink className={ `${selectedPage === "tips & tools" ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
         href="#tips & tools"
-        onClick={() => setSelectedPage('tips & tools')}
+        onClick={() => selectedPage('tips & tools')}
         />
         </div>
     )

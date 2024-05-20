@@ -5,8 +5,8 @@ import useMediaQuery from "../hooks/useMediaQuery";
 const Link = ({ page, selectedPage, setSelectedPage}) => {
     const lowerCasePage = page.toLowerCase();
     return (
-        <AnchorLink className={ `${selectedPage === lowerCasePage ? "text-yellow" : ""} 
-        hover: text-yellow transition duration-500`}
+        <AnchorLink className={ `${selectedPage === lowerCasePage ? "text-dark-grey" : ""} 
+        hover: text-dark-grey transition duration-500`}
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
         >
@@ -23,7 +23,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     return (
         <nav className = {`${navbarBackground} z-40 w-full fixed top-0 py-6`} >
             <div className="flex items-center justify-between mx-auto w-5/6">
-                <h4 className="font-playfair text-3xl font-bold"> Tuinue Wasichana</h4>
+                <h4 className="font-playfair text-3xl font-bold text-dark-grey"> Tuinue Wasichana</h4>
 
                 {/*desktop nav bar */}
                 {isAboveSmallScreens ? (
@@ -50,7 +50,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         />                      
                     </div>
                 ) : (
-                    <button className="rounded-full bg-red p-2"
+                    <button className="rounded-full bg-black p-2"
                     onClick={() => setIsMenuToggled(!isMenuToggled)} >
                         <img alt = "menu-icon" src="../assets/menu-icon.svg" />
                     </button>
@@ -58,7 +58,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
                 {/* mobile nav bar */}
                 {!isAboveSmallScreens && isMenuToggled && (
-                    <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+                    <div className="fixed right-0 bottom-0 h-full bg-black w-[300px]">
                       {/* close icon */}
                       <div className="flex justify-end p-12">
                         <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -67,7 +67,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                       </div>
                       
                       {/* menu items */}
-                      <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+                      <div className="flex flex-col gap-10 ml-[33%] text-2xl text-dark-grey">
                       <Link 
                           page = "Home"
                           selectedPage={selectedPage}
