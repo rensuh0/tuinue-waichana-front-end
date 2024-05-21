@@ -23,7 +23,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     return (
         <nav className = {`${navbarBackground} z-40 w-full fixed top-0 py-6`} >
             <div className="flex items-center justify-between mx-auto w-5/6">
-                <h4 className="font-playfair text-3xl font-bold text-dark-grey"> Tuinue Wasichana</h4>
+                <h4 className="font-playfair text-3xl font-bold text-black"> Tuinue Wasichana</h4>
 
                 {/*desktop nav bar */}
                 {isAboveSmallScreens ? (
@@ -67,7 +67,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                       </div>
                       
                       {/* menu items */}
-                      <div className="flex flex-col gap-10 ml-[33%] text-2xl text-dark-grey">
+                      <div className="flex flex-col gap-10 ml-[33%] text-2xl text-black">
                       <Link 
                           page = "Home"
                           selectedPage={selectedPage}

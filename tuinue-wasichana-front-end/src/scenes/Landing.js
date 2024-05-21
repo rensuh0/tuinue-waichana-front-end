@@ -73,7 +73,7 @@ const Landing = ({setSelectedPage}) => {
             }}
             >
                 <AnchorLink
-                className="bg-white text-deep-blue rounded-sm py-3 px-4 font-semibold
+                className="bg-dark-grey text-deep-blue rounded-sm py-3 px-4 font-semibold
                 hover:text-black transition duration-500"
                 onClick={() => setSelectedPage("ways to fundraise")}
                 href="#ways to fundraise"
